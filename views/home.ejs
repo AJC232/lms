@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-App</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+  <div class="showcase"></div>  
+    <div class="header">
+        <div><h1>Learning Management System</h1></div>
+        <% if (user) { %>
+            <div class="welcome">
+                <h1>Welcome <%= user.email %></h1>
+            </div>
+            <div class="logout"> 
+                <a href="/logout"><Button>Logout</Button></a>
+             </div>
+            <% } else { %>
+            <div class="login"> 
+               <a href="/login"><Button>Login</Button></a>
+            </div>
+            <div class="signup">
+               <a href="/signup"><Button>Signup</Button></a>
+            </div>
+    </div>
+    
+    <div class="dashboard">
+        <a href="/dashboard"><Button>Dashboard</Button></a>
+     </div>
+    <% } %>
+    <div class="createdBy">
+        <h3>Created by: Adityasinh Chauhan</h3>
+    </div>
+</body>
+</html>
